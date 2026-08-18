@@ -1,0 +1,43 @@
+# dependencies
+/node_modules
+/.pnp
+.pnp.js
+
+# next.js
+/.next/
+/out/
+
+# production build
+/build
+/dist
+
+# misc
+.DS_Store
+*.pem
+*.log
+
+# local env files (never commit secrets)
+.env
+.env.*
+!.env.example
+
+# debug
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# typescript
+*.tsbuildinfo
+next-env.d.ts
+
+# vercel
+.vercel
+
+# coverage
+/coverage
+
+# local verification artifacts (debug screenshots)
+/.verify
+
+# WorkBuddy local working metadata
+/.workbuddy
