@@ -10,6 +10,8 @@
 # production build
 /build
 /dist
+# next static export output
+/out
 
 # misc
 .DS_Store

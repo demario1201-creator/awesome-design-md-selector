@@ -7,7 +7,7 @@ const cache = new Map<string, Promise<string>>();
 export function loadDesignMd(id: string): Promise<string> {
   const key = encodeURIComponent(id);
   if (!cache.has(key)) {
-    const promise = fetch(`/design-md/${key}.md`).then((res) => {
+    const promise = fetch(`design-md/${key}.md`).then((res) => {
       if (!res.ok) throw new Error(`HTTP ${res.status}`);
       return res.text();
     });

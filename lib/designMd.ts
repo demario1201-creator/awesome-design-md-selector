@@ -13,7 +13,7 @@ export async function loadStyleRaw(id: string): Promise<string> {
   const cached = cache.get(id);
   if (cached !== undefined) return cached;
 
-  const res = await fetch(`/design-md/${encodeURIComponent(id)}.md`);
+  const res = await fetch(`design-md/${encodeURIComponent(id)}.md`);
   if (!res.ok) {
     throw new Error(`Failed to load DESIGN.md for "${id}" (HTTP ${res.status})`);
   }
